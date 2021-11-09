@@ -18,6 +18,10 @@ router.get('/sharks', function(req,res){
     res.sendFile(path + 'sharks.html');
 });
 
+router.get('/pets', function(req,res){
+    res.sendFile(path + 'sharks.html');
+});
+
 app.use(express.static(path));
 app.use('/', router);
 
